@@ -87,7 +87,7 @@ body{
 
 /* MENU */
     nav{
-        background-color: rgb(172, 140, 128);
+        background-color: rgb(209, 179, 179);
         width: 100%;
         height: 100px;
         position: fixed;
@@ -123,7 +123,6 @@ body{
         height: 80px;
         padding: 10px 20px 0px 0px;
     }
-
  
 @media only screen and (min-width: 768px){
     .img-banner{
@@ -131,29 +130,21 @@ body{
         width: 100%;
         padding-bottom: 20px;
     }
-    .img-info{
+    .img-info,  .img-info2{
         display: block;
         margin: 0% auto;
     }
-    .img-one{
+    .img-one, .img-two{
         width: 420px;
         height: 550px;
         display: block;
         margin: 0% auto;
         padding-bottom: 30px;
     }
-
-/*Image BOOK*/
-    .img-info2{
-        display: block;
-        margin: 0% auto;
-    }
-    .img-two{
-        width: 420px;
-        height: 550px;
-        display: block;
-        margin: 0% auto;
-        padding-bottom: 30px;
+    .img-one:hover, .img-two:hover{
+        width: 421px;
+        height: 552px;
+        transition: 300ms;
     }
 
 /*Porduct Image WooD*/
@@ -177,7 +168,7 @@ body{
     }
 /* MENU */
     nav{
-        background-color: rgb(172, 140, 128);
+        background-color: rgb(209, 179, 179);
         width: 100%;
         height: 100px;
     }
@@ -270,7 +261,7 @@ body{
 
     /* MENU */
     nav{
-        background-color: rgb(172, 140, 128);
+        background-color: rgb(209, 179, 179);
         width: 100%;
         height: 100px;
     }

@@ -10,35 +10,210 @@
 </head>
 <body>
         <nav class="col-lg-12 nav-bar">
-            <a href="https://deydebraj.github.io/TravelProduct/"><img class="img-logo" src="images/logo.png" alt="backgroundlogo"></a>  
+            <a href="/index.html"><img class="img-logo" src="images/logo.png" alt="backgroundlogo"></a>  
         </nav> 
         
         <div class="header" align="center">
             Our Products
         </div>
+        <!--CART LOGO-->
         <div class="col-lg-12 cart-icon">
             <i class="fas fa-cart-plus"></i>
         </div>
+        <!--ITEM NUMBERS-->
+        <p id="numberOfItem"></p>
+        <!--LIST OF ITEMS-->
+        <div class="listOfItems" style="text-align: center">
+            <ul>
+                <li id="listOfItemsOne"></li>
+                <li id="listOfItemsOnePrice"></li>
+            </ul>
+        </div>
+
+        <!--mystery Box-->
+        <table id="shop-cart" class="container-shoppingcart col-lg-9 col-xs-6" align="center">
+            <thead>
+                <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Remove</th>
+                        <th>Total</th>
+                </tr>
+            </thead>  
+
+            <tbody>
+                <tr>
+                    <td><img id="one" src="images/bag.jpg" height=50px></td>
+                    <td>
+                        <p>
+                            <span class="product-price"  ></span>
+                            <span class="currency" >$</span>
+                            <span class="amount" value="100">100</span>
+                        </p>
+                    </td>
+                    <td>
+                        <input type="text" class="cart-qty" id="cart-qty-bag" value="1" style="max-width: 40px">
+                    </td>
+                    <td>
+                        <!-- <a href="#" class="remove-cart" onclick="remove_item(19504931602499); return false;">×</a> -->
+                        <a href="#" class="remove-cart" style="text-decoration: none">×</a>
+                    </td>
+                    <td>
+                        <p>
+                            <span class="total-cost" id="total-cost-id-one">...</span>
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                        <td><img id="two" src="images/shoe.jpg" height=50px></td>
+                        <td>
+                            <p>
+                                <span class="product-price"  ></span>
+                                <span class="currency" >$</span>
+                                <span class="amount" value="240" >240</span>
+                            </p>
+                        </td>
+                        <td>
+                            <input type="text" class="cart-qty" value="1" style="max-width: 40px">
+                        </td>
+                        <td>
+                            <!-- <a href="#" class="remove-cart" onclick="remove_item(19504931602499); return false;">×</a> -->
+                            <a href="#" class="remove-cart" style="text-decoration: none">×</a>
+                        </td>
+                        <td>
+                            <p>
+                                <span class="total-cost" id="total-cost-id-two">...</span>
+                            </p>
+                        </td>
+                </tr>
+                
+                <tr>
+                        <td><img id="three" src="images/knife.jpg" height=50px></td>
+                        <td>
+                            <p>
+                                <span class="product-price"  ></span>
+                                <span class="currency" >$</span>
+                                <span class="amount" value="40">40</span>
+                            </p>
+                        </td>
+                        <td>
+                            <input type="text" class="cart-qty" value="1" style="max-width: 40px">
+                        </td>
+                        <td>
+                            <!-- <a href="#" class="remove-cart" onclick="remove_item(19504931602499); return false;">×</a> -->
+                            <a href="#" class="remove-cart" style="text-decoration: none">×</a>
+                        </td>
+                        <td>
+                            <p>
+                                <span class="total-cost" id="total-cost-id-three">...</span>
+                            </p>
+                        </td>
+                </tr>
+                <tr>
+                        <td><img id="four" src="images/bottle.jpg" height=50px></td>
+                        <td>
+                            <p>
+                                <span class="product-price"  ></span>
+                                <span class="currency" >$</span>
+                                <span class="amount" value="35">35</span>
+                            </p>
+                        </td>
+                        <td>
+                            <input type="text" class="cart-qty" value="1" style="max-width: 40px">
+                        </td>
+                        <td>
+                            <!-- <a href="#" class="remove-cart" onclick="remove_item(19504931602499); return false;">×</a> -->
+                            <a href="#" class="remove-cart" style="text-decoration: none">×</a>
+                        </td>
+                        <td>
+                            <p>
+                                <span class="total-cost" id="total-cost-id-four">...</span>
+                            </p>
+                        </td>
+                </tr>
+                <tr>
+                        <td><img id="five" src="images/tshirt.jpg" height=50px></td>
+                        <td>
+                            <p>
+                                <span class="product-price"  ></span>
+                                <span class="currency" >$</span>
+                                <span class="amount" value="20">20</span>
+                            </p>
+                        </td>
+                        <td>
+                            <input type="text" class="cart-qty" value="1" style="max-width: 40px">
+                        </td>
+                        <td>
+                            <!-- <a href="#" class="remove-cart" onclick="remove_item(19504931602499); return false;">×</a> -->
+                            <a href="#" class="remove-cart" style="text-decoration: none">×</a>
+                        </td>
+                        <td>
+                            <p>
+                                <span class="total-cost" id="total-cost-id-five">...</span>
+                            </p>
+                        </td>
+                </tr>
+                <tr>
+                        <td><img id="six" src="images/Jacket.jpg" height=50px></td>
+                        <td>
+                            <p>
+                                <span class="product-price"  ></span>
+                                <span class="currency" >$</span>
+                                <span class="amount" value="250">250</span>
+                            </p>
+                        </td>
+                        <td>
+                            <input type="text" class="cart-qty" value="1" style="max-width: 40px">
+                        </td>
+                        <td>
+                            <!-- <a href="#" class="remove-cart" onclick="remove_item(19504931602499); return false;">×</a> -->
+                            <a href="#" class="remove-cart" style="text-decoration: none">×</a>
+                        </td>
+                        <td>
+                            <p>
+                                <span class="total-cost" id="total-cost-id-six">...</span>
+                            </p>
+                        </td>
+                </tr>    
+            </tbody>
+        </table>
+
+
+
+
+
+
 
     <div class="container-shop">
         <div class="row">
             <div class="col-lg-6 col-xs-12 box-one" align="center">
-                <img class="product-one" src="images/bag.jpg" alt="bag">
-                <p>Trekking Bag<span>Add to Cart</span></p>
+                <img class="product" src="images/bag.jpg" alt="Trekking Bag" price="$100">
+                <p>Trekking Bag - $100<span class="add">Add to Cart</span></p>
             </div>
-            <div class="col-lg-6 col-xs-12 box-two" align="center">
-                <img class="product-two" src="images/shoe.jpg" alt="bag">
-                <p>Hiking Show<span>Add to Cart</span></p>
+            <div class="col-lg-6 col-xs-12 box-two" align="center" price="$240">
+                <img class="product" src="images/shoe.jpg" alt="Shoe">
+                <p>Hiking Shoe - $240<span class="add">Add to Cart</span></p>
             </div>
-            <div class="col-lg-6 col-xs-12 box-three" align="center">
-                <img class="product-three" src="images/knife.jpg" alt="bag">
-                <p>Cutting Knife<span>Add to Cart</span></p>
+            <div class="col-lg-6 col-xs-12 box-three" align="center" price="40">
+                <img class="product" src="images/knife.jpg" alt="Knife">
+                <p>Cutting Knife - $40<span class="add">Add to Cart</span></p>
             </div>
-            <div class="col-lg-6 col-xs-12 box-four" align="center">
-                <img class="product-four" src="images/bottle.jpg" alt="bag">
-                <p>Water Bottle<span>Add to Cart</span></p>
+            <div class="col-lg-6 col-xs-12 box-four" align="center" price="$35">
+                <img class="product" src="images/bottle.jpg" alt="Water Bottle">
+                <p>Water Bottle - $35<span class="add">Add to Cart</span></p>
+            </div>
+            <div class="col-lg-6 col-xs-12 box-four" align="center" price="$20">
+                <img class="product" src="images/tshirt.jpg" alt="T-shirt">
+                <p>t-shirt - $20<span class="add">Add to Cart</span></p>
+            </div>
+            <div class="col-lg-6 col-xs-12 box-four" align="center" price="$250">
+                <img class="product" src="images/Jacket.jpg" alt="Jacket">
+                <p>Jacket - $250<span class="add">Add to Cart</span></p>
             </div>
         </div>
     </div>
 </body>
+        <script src="main.js"></script>
 </html>
