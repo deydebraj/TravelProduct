@@ -1,48 +1,33 @@
+//Removing Items
+var btns = document.querySelectorAll("tr .remove-cart")
+Array.from(btns).forEach(function(btn){
+    btn.addEventListener('click', function(e){
+        const tr1 = e.target.parentElement;
+        tr1.parentNode.parentNode.removeChild(tr1.parentNode);
+    });
+});
 
-var addToCartButton = document.getElementsByClassName("add")
-var numberOfItem = document.getElementById("numberOfItem");
-console.log(numberOfItem)
-//eventlistener for all the btns
-for(i=0; i<addToCartButton.length; i++){
-    addToCartButton[i].addEventListener("click",editTotal)
-}
-//NUMBER OF ITEMS ADDED TO THE CART
-function fun() {
-    var numberOfItem = document.getElementById("numberOfItem");
-    var number = numberOfItem.innerHTML;
-    number++;
-    numberOfItem.innerHTML = number;
-}
+//Calculating the total
+$("#cart-qty-bag,#input1").keyup(function () {
+    $('#total-cost-id-one').val($('#input1').val() * $('#cart-qty-bag').val());
+});
 
-function editTotal(){
-    var totalCostOne = document.getElementById("total-cost-id-one")
-    var totalCostTwo = document.getElementById("total-cost-id-two")
-    var totalCostThree = document.getElementById("total-cost-id-three")
-    var totalCostFour = document.getElementById("total-cost-id-four")
-    var totalCostFive = document.getElementById("total-cost-id-five")
-    var totalCostSix = document.getElementById("total-cost-id-six")
+$("#cart-qty-shoe,#input2").keyup(function () {
+    $('#total-cost-id-two').val($('#input2').val() * $('#cart-qty-shoe').val());
+});
 
-    var costOfItem = document.getElementsByClassName("amount")
-    for(i=0; i<costOfItem.length; i++){
-        var newValue = costOfItem[0].getAttribute("value");
-        totalCostOne.innerHTML = newValue;
-    }
-}
+$("#cart-qty-knife,#input3").keyup(function () {
+    $('#total-cost-id-three').val($('#input3').val() * $('#cart-qty-knife').val());
+});
 
-/*
-for(i=0; i<addSpan.length; i++){
-    addSpan[i].addEventListener("click",fun1)
-}
+$("#cart-qty-bag,#input4").keyup(function () {
+    $('#total-cost-id-four').val($('#input4').val() * $('#cart-qty-bottle').val());
+});
 
-function fun1(){
-   //NAME OF THE ITEMS ADDED TO THE CART
-    var product = document.getElementsByClassName("product");
-    var name = product[0].getAttribute("alt")
-    var price = product[0].getAttribute("price")
-    //inseting text
-    var listOfItems = document.getElementById("listOfItemsOne")
-    listOfItems.innerHTML = name;
-    var itemPrice = document.getElementById("listOfItemsOnePrice");
-    itemPrice.innerHTML = price; 
-}
-*/
+$("#cart-qty-tshirt,#input5").keyup(function () {
+    $('#total-cost-id-five').val($('#input5').val() * $('#cart-qty-tshirt').val());
+});
+
+$("#cart-qty-jacket,#input6").keyup(function () {
+    $('#total-cost-id-six').val($('#input6').val() * $('#cart-qty-jacket').val());
+});
