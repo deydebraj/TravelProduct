@@ -35,6 +35,10 @@ body{
 .box-two{
     height: 500px;
 }
+.row{
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
 .row p{
     margin-right: 30px;
     padding-left: 50px;
@@ -117,4 +121,23 @@ tbody tr{
 tbody tr:hover{
     background: rgb(240, 240, 240);
     transition: 100ms;
+}
+
+
+#input1, #input2, #input3, #input4, #input5, #input6{
+    height:1px;
+    width:1px;
+    visibility: hidden;
+}
+.cart-qty{
+    width:50px;
+    border-radius: 2px;
+    text-align: center;
+    background-color: rgb(240, 240, 240);
+}
+.total-cost{
+    width:50px;
+    border-radius: 2px;
+    text-align: center;
+    background-color: rgb(240, 240, 240);
 }
