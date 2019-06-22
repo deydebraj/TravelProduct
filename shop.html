@@ -7,10 +7,14 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
     <link rel="stylesheet" href="styleshop.css">
     <title>Shop</title>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
 </head>
 <body>
         <nav class="col-lg-12 nav-bar">
-            <a href="/index.html"><img class="img-logo" src="images/logo.png" alt="backgroundlogo"></a>  
+            <a href="https://deydebraj.github.io/TravelProduct/"><img class="img-logo" src="images/logo.png" alt="backgroundlogo"></a>  
         </nav> 
         
         <div class="header" align="center">
@@ -29,7 +33,13 @@
                 <li id="listOfItemsOnePrice"></li>
             </ul>
         </div>
-
+        <!--THIS SHOULD BE HIDDEN -->
+        <input type="text" name="input1" id="input1" value="100">
+        <input type="text" name="input2" id="input2" value="240">
+        <input type="text" name="input3" id="input3" value="40">
+        <input type="text" name="input4" id="input4" value="35">
+        <input type="text" name="input5" id="input5" value="20">
+        <input type="text" name="input6" id="input6" value="250">
         <!--mystery Box-->
         <table id="shop-cart" class="container-shoppingcart col-lg-9 col-xs-6" align="center">
             <thead>
@@ -53,15 +63,16 @@
                         </p>
                     </td>
                     <td>
+                        <!--Input 2-->
                         <input type="text" class="cart-qty" id="cart-qty-bag" value="1" style="max-width: 40px">
                     </td>
                     <td>
-                        <!-- <a href="#" class="remove-cart" onclick="remove_item(19504931602499); return false;">×</a> -->
                         <a href="#" class="remove-cart" style="text-decoration: none">×</a>
                     </td>
                     <td>
                         <p>
-                            <span class="total-cost" id="total-cost-id-one">...</span>
+                            <!--OUTPUT-->
+                            <input class="total-cost" name="total-cost-id-one" type="text" name="output" id="total-cost-id-one" value="100">
                         </p>
                     </td>
                 </tr>
@@ -76,15 +87,14 @@
                             </p>
                         </td>
                         <td>
-                            <input type="text" class="cart-qty" value="1" style="max-width: 40px">
+                            <input type="text" class="cart-qty" id="cart-qty-shoe" value="1" style="max-width: 40px">
                         </td>
                         <td>
-                            <!-- <a href="#" class="remove-cart" onclick="remove_item(19504931602499); return false;">×</a> -->
                             <a href="#" class="remove-cart" style="text-decoration: none">×</a>
                         </td>
                         <td>
                             <p>
-                                <span class="total-cost" id="total-cost-id-two">...</span>
+                                <input class="total-cost"  name="total-cost-id-two" type="text" name="output" id="total-cost-id-two" value="240">
                             </p>
                         </td>
                 </tr>
@@ -99,7 +109,7 @@
                             </p>
                         </td>
                         <td>
-                            <input type="text" class="cart-qty" value="1" style="max-width: 40px">
+                            <input type="text" class="cart-qty" id="cart-qty-knife" value="1" style="max-width: 40px">
                         </td>
                         <td>
                             <!-- <a href="#" class="remove-cart" onclick="remove_item(19504931602499); return false;">×</a> -->
@@ -107,7 +117,7 @@
                         </td>
                         <td>
                             <p>
-                                <span class="total-cost" id="total-cost-id-three">...</span>
+                                    <input class="total-cost"  name="total-cost-id-three" type="text" name="output" id="total-cost-id-three" value="40">
                             </p>
                         </td>
                 </tr>
@@ -121,7 +131,7 @@
                             </p>
                         </td>
                         <td>
-                            <input type="text" class="cart-qty" value="1" style="max-width: 40px">
+                            <input type="text" class="cart-qty" id="cart-qty-bottle" value="1" style="max-width: 40px">
                         </td>
                         <td>
                             <!-- <a href="#" class="remove-cart" onclick="remove_item(19504931602499); return false;">×</a> -->
@@ -129,7 +139,7 @@
                         </td>
                         <td>
                             <p>
-                                <span class="total-cost" id="total-cost-id-four">...</span>
+                                    <input class="total-cost"  name="total-cost-id-four" type="text" name="output" id="total-cost-id-four" value="35">
                             </p>
                         </td>
                 </tr>
@@ -143,7 +153,7 @@
                             </p>
                         </td>
                         <td>
-                            <input type="text" class="cart-qty" value="1" style="max-width: 40px">
+                            <input type="text" class="cart-qty" id="cart-qty-tshirt" value="1" style="max-width: 40px">
                         </td>
                         <td>
                             <!-- <a href="#" class="remove-cart" onclick="remove_item(19504931602499); return false;">×</a> -->
@@ -151,10 +161,10 @@
                         </td>
                         <td>
                             <p>
-                                <span class="total-cost" id="total-cost-id-five">...</span>
+                                <input class="total-cost"  name="total-cost-id-five" type="text" name="output" id="total-cost-id-five" value="20">
                             </p>
-                        </td>
-                </tr>
+                        </tr>
+                    </td>
                 <tr>
                         <td><img id="six" src="images/Jacket.jpg" height=50px></td>
                         <td>
@@ -165,7 +175,7 @@
                             </p>
                         </td>
                         <td>
-                            <input type="text" class="cart-qty" value="1" style="max-width: 40px">
+                            <input type="text" class="cart-qty" id="cart-qty-jacket" value="1" style="max-width: 40px">
                         </td>
                         <td>
                             <!-- <a href="#" class="remove-cart" onclick="remove_item(19504931602499); return false;">×</a> -->
@@ -173,17 +183,12 @@
                         </td>
                         <td>
                             <p>
-                                <span class="total-cost" id="total-cost-id-six">...</span>
+                                    <input class="total-cost"  name="total-cost-id-six" type="text" name="output" id="total-cost-id-six" value="250">
                             </p>
                         </td>
                 </tr>    
             </tbody>
         </table>
-
-
-
-
-
 
 
     <div class="container-shop">
